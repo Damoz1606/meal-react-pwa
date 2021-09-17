@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: row !important;
+}
+
+.navbar-menu {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgb(10 10 10 / 10%) !important;
+}
+
+a.navbar-item {
+    font-weight: 400;
+    text-transform: uppercase;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+a.brand {
+    font-weight: bold;
+}

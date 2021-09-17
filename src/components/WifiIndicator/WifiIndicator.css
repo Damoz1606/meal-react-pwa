@@ -1,0 +1,34 @@
+.sparking {
+    animation: sparking 1s linear infinite;
+    -webkit-animation: sparking 1s linear infinite;
+}
+
+@keyframes sparking {
+    0% {
+        color: var(--primary-color)
+    }
+    33% {
+        color: rgb(0, 0, 0)
+    }
+    66% {
+        color: var(--primary-color)
+    }
+    100% {
+        color: rgb(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes sparking {
+    0% {
+        color: var(--primary-color)
+    }
+    33% {
+        color: rgb(0, 0, 0)
+    }
+    66% {
+        color: var(--primary-color)
+    }
+    100% {
+        color: rgb(0, 0, 0)
+    }
+}

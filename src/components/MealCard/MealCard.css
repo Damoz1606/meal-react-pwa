@@ -1,0 +1,56 @@
+.card {
+    width: 450px !important;
+    max-width: 500px !important;
+    cursor: pointer;
+    overflow-x: none;
+}
+
+.card-content {
+    background-color: var(--primary-color) !important;
+    color: #ffff;
+}
+
+.card:hover {
+    -webkit-animation-name: cardHover;
+    animation-name: cardHover;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 464px) {
+    .card {
+        width: 310px !important;
+    }
+}
+
+@keyframes cardHover {
+    0% {
+        -webkit-transform: translate3d(1%, 0, 0);
+        transform: translate3d(1%, 0, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(-1%, 0, 0);
+        transform: translate3d(-1%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes cardHover {
+    0% {
+        -webkit-transform: translate3d(1%, 0, 0);
+        transform: translate3d(1%, 0, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(-1%, 0, 0);
+        transform: translate3d(-1%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

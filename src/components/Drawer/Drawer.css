@@ -1,0 +1,123 @@
+.drawer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.drawer-bg {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.drawer-bg {
+    opacity: 1;
+}
+
+.drawer-menu {
+    position: absolute;
+    z-index: inherit;
+    top: 0px;
+    display: flex;
+    width: 50%;
+    background-color: var(--secondary-color);
+    height: 100%;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    margin: 1rem;
+}
+
+.link-item {
+    width: 100%;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    transition: all .3s ease;
+}
+
+.link-item:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    transition: all .1s ease;
+}
+
+.open-drawer-menu {
+    -webkit-animation-name: openDrawerMenu;
+    animation-name: openDrawerMenu;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.close-drawer-menu {
+    -webkit-animation-name: closeDrawerMenu;
+    animation-name: closeDrawerMenu;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes openDrawerMenu {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes openDrawerMenu {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes closeDrawerMenu {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@-webkit-keyframes closeDrawerMenu {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@media (min-width: 1000px) {
+    .drawer-menu {
+        width: 25%;
+    }
+}

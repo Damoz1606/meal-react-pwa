@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(245, 88, 27);
+    --secondary-color: #ffff
+}
+
+* {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+    background: transparent !important;
+    transition: all .1s ease;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    transition: all .3s ease;
+}
+
+::-webkit-scrollbar:before {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: rgb(146, 146, 146);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+    filter: drop-shadow(45%);
+}
+
+.indicator {
+    margin: 0.25rem 0 0.25rem 0;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 0 10px 15px rgb(10 10 10 / 10%) !important;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.background-is-secondary {
+    background-color: var(--secondary-color) !important;
+}
